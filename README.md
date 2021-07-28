@@ -6,7 +6,10 @@ Usage:
   jsonode <code> < <json file>
   jsonode --file <file.js> < <json file>
 
-Runs the code as javascript, where `$` contains input parsed as json. The output is converted to json by default. If the output is a function, it is called with the input as the argument. If the output is a promise, it is awaited. 
+Runs the code as javascript, where `$` contains input parsed as json.
+The output is converted to json by default.
+If the output is a function, it is called with the input as the argument.
+If the output is a promise, it is awaited. 
 
 Options:
   --ugly	suppress indented output
