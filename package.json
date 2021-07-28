@@ -1,0 +1,17 @@
+{
+  "name": "jsonode",
+  "version": "1.0.0",
+  "description": "CLI to transform json with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Success\""
+  },
+  "bin": {
+    "jsonode": "./index.js"
+  },
+  "author": "Gavin Haynes <haynes.gt@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
