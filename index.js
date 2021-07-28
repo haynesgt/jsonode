@@ -10,16 +10,17 @@ function help() {
   console.error(`Usage:\n` +
     `  jsonode [(-r|--require) module]* [--raw-in] [--raw-out] [-u|--ugly] [-i|--indent=2] ((-f|--file) <file.js> | <code>)`,
     `  <command with json output> | jsonode <code>\n` +
-    `  jsonode <code> < <json file>\n\n` +
-    `  jsonode --file <file.js> < <json file>\n\n` +
+    `  jsonode <code> < <json file>\n` +
+    `  jsonode --file <file.js> < <json file>\n` +
+    `\n` +
     `Runs the code as javascript, where \`$\` contains input parsed as json. ` +
     `The output is converted to json by default. ` +
     `If the output is a function, it is called with the input as the argument. ` +
     `If the output is a promise, it is awaited. \n\n` +
-    `Options:\n`
+    `Options:\n` +
     `  --ugly\tsuppress indented output\n` +
-    `  --raw-in\tmake \`$\` equal the input as a string rather than json\n`
-    `  --raw-out\tprint the output as a string rather than json\n`
+    `  --raw-in\tmake \`$\` equal the input as a string rather than json\n` +
+    `  --raw-out\tprint the output as a string rather than json\n` +
     `  --require\tinclude a module and make it available by its name\n`
   );
 }
