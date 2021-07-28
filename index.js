@@ -76,7 +76,11 @@ async function read(stream) {
     const data = typeof result === "function" ? await result($) : result;
 
     if (args['raw-out']) {
-      console.dir(data, {depth: null});
+      if (typeof data === "string") {
+        console.log(data);
+      } else {
+        console.dir(data, {depth: null});
+      }
     } else {
       const indent = args.ugly ? undefined : args.indent || 2;
       const output = JSON.stringify(data, null, indent);
