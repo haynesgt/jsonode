@@ -9,6 +9,11 @@
   "bin": {
     "jsonode": "./index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haynesgt/jsonode.git"
+  },
+  "homepage": "https://github.com/haynesgt/jsonode",
   "author": "Gavin Haynes <haynes.gt@gmail.com>",
   "license": "ISC",
   "dependencies": {
